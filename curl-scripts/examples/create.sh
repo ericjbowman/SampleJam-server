@@ -1,6 +1,6 @@
 #!/bin/bash
 
-API="http://localhost:4741"
+API="https://gentle-stream-17108.herokuapp.com"
 URL_PATH="/examples"
 TEXT="blarp"
 TITLE="bloop"

@@ -1,7 +1,7 @@
 'use strict'
 
 // creating a base name for the mongodb
-const mongooseBaseName = 'express-api-image-upload'
+const mongooseBaseName = 'SampleJam-server'
 
 // create the mongodb uri for development and test
 const database = {
