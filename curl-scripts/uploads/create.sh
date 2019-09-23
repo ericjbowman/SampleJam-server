@@ -1,16 +1,15 @@
 #!/bin/bash
 
-API="http://localhost:4741"
-URL_PATH="/examples"
-TEXT="blarp"
-TITLE="bloop"
+API="https://gentle-stream-17108.herokuapp.com"
+URL_PATH="/uploads"
 
 curl "${API}${URL_PATH}" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
+  --header "Authorization: Bearer ${TOKEN}" \
   --data '{
-    "example": {
+    "upload": {
       "text": "'"${TEXT}"'",
       "title": "'"${TITLE}"'"
     }
