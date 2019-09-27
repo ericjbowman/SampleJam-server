@@ -8,6 +8,7 @@ const cors = require('cors')
 const exampleRoutes = require('./app/routes/example_routes')
 const userRoutes = require('./app/routes/user_routes')
 const uploadRoutes = require('./app/routes/upload_routes')
+const oneShotRoutes = require('./app/routes/oneShot_routes')
 
 // require error handling middleware
 const errorHandler = require('./lib/error_handler')
@@ -68,6 +69,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(exampleRoutes)
 app.use(userRoutes)
 app.use(uploadRoutes)
+app.use(oneShotRoutes)
 
 // register error handling middleware
 // note that this comes after the route middlewares, because it needs to be
